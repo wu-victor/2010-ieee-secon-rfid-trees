@@ -1,0 +1,551 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The Mathworks, Inc. Version 7.6.0.324 (R2008a). Operating System: Linux 2.6.18-128.1.6.el5PAE #1 SMP Tue Mar 24 12:39:24 EDT 2009 i686.
+%%Title: /nmnt/home2/v/vw/vwu/vwu3/Desktop/Backtracking/heat3.eps
+%%CreationDate: 07/29/2009  02:07:48
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    59   211   550   580
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    59   211   550   580
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0708 6960 csm
+
+    0     0  5903  4424 rc
+1045 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 5904 4425 rf
+6 w
+gs 767 332 3952 3606 rc
+/mwscm { [/Indexed /DeviceRGB 1023
+  <
+    ffffff fefefe fefefe fefefe fefefe fdfdfd fdfdfd fdfdfd fdfdfd fcfcfc 
+    fcfcfc fcfcfc fcfcfc fbfbfb fbfbfb fbfbfb fbfbfb fafafa fafafa fafafa 
+    fafafa f9f9f9 f9f9f9 f9f9f9 f9f9f9 f8f8f8 f8f8f8 f8f8f8 f8f8f8 f7f7f7 
+    f7f7f7 f7f7f7 f7f7f7 f6f6f6 f6f6f6 f6f6f6 f6f6f6 f5f5f5 f5f5f5 f5f5f5 
+    f5f5f5 f4f4f4 f4f4f4 f4f4f4 f4f4f4 f3f3f3 f3f3f3 f3f3f3 f3f3f3 f2f2f2 
+    f2f2f2 f2f2f2 f2f2f2 f1f1f1 f1f1f1 f1f1f1 f1f1f1 f0f0f0 f0f0f0 f0f0f0 
+    f0f0f0 efefef efefef efefef efefef eeeeee eeeeee eeeeee eeeeee ededed 
+    ededed ededed ededed ececec ececec ececec ececec ebebeb ebebeb ebebeb 
+    ebebeb eaeaea eaeaea eaeaea eaeaea e9e9e9 e9e9e9 e9e9e9 e9e9e9 e8e8e8 
+    e8e8e8 e8e8e8 e8e8e8 e7e7e7 e7e7e7 e7e7e7 e7e7e7 e6e6e6 e6e6e6 e6e6e6 
+    e6e6e6 e5e5e5 e5e5e5 e5e5e5 e5e5e5 e4e4e4 e4e4e4 e4e4e4 e4e4e4 e3e3e3 
+    e3e3e3 e3e3e3 e3e3e3 e2e2e2 e2e2e2 e2e2e2 e2e2e2 e1e1e1 e1e1e1 e1e1e1 
+    e1e1e1 e0e0e0 e0e0e0 e0e0e0 e0e0e0 dfdfdf dfdfdf dfdfdf dfdfdf dedede 
+    dedede dedede dedede dddddd dddddd dddddd dddddd dcdcdc dcdcdc dcdcdc 
+    dcdcdc dbdbdb dbdbdb dbdbdb dbdbdb dadada dadada dadada dadada d9d9d9 
+    d9d9d9 d9d9d9 d9d9d9 d8d8d8 d8d8d8 d8d8d8 d8d8d8 d7d7d7 d7d7d7 d7d7d7 
+    d7d7d7 d6d6d6 d6d6d6 d6d6d6 d6d6d6 d5d5d5 d5d5d5 d5d5d5 d5d5d5 d4d4d4 
+    d4d4d4 d4d4d4 d4d4d4 d3d3d3 d3d3d3 d3d3d3 d3d3d3 d2d2d2 d2d2d2 d2d2d2 
+    d2d2d2 d1d1d1 d1d1d1 d1d1d1 d1d1d1 d0d0d0 d0d0d0 d0d0d0 d0d0d0 cfcfcf 
+    cfcfcf cfcfcf cfcfcf cecece cecece cecece cecece cdcdcd cdcdcd cdcdcd 
+    cdcdcd cccccc cccccc cccccc cccccc cbcbcb cbcbcb cbcbcb cbcbcb cacaca 
+    cacaca cacaca cacaca c9c9c9 c9c9c9 c9c9c9 c9c9c9 c8c8c8 c8c8c8 c8c8c8 
+    c8c8c8 c7c7c7 c7c7c7 c7c7c7 c7c7c7 c6c6c6 c6c6c6 c6c6c6 c6c6c6 c5c5c5 
+    c5c5c5 c5c5c5 c5c5c5 c4c4c4 c4c4c4 c4c4c4 c4c4c4 c3c3c3 c3c3c3 c3c3c3 
+    c3c3c3 c2c2c2 c2c2c2 c2c2c2 c2c2c2 c1c1c1 c1c1c1 c1c1c1 c1c1c1 c0c0c0 
+    c0c0c0 c0c0c0 c0c0c0 bfbfbf bfbfbf bfbfbf bfbfbf bfbfbf bebebe bebebe 
+    bebebe bebebe bdbdbd bdbdbd bdbdbd bdbdbd bcbcbc bcbcbc bcbcbc bcbcbc 
+    bbbbbb bbbbbb bbbbbb bbbbbb bababa bababa bababa bababa b9b9b9 b9b9b9 
+    b9b9b9 b9b9b9 b8b8b8 b8b8b8 b8b8b8 b8b8b8 b7b7b7 b7b7b7 b7b7b7 b7b7b7 
+    b6b6b6 b6b6b6 b6b6b6 b6b6b6 b5b5b5 b5b5b5 b5b5b5 b5b5b5 b4b4b4 b4b4b4 
+    b4b4b4 b4b4b4 b3b3b3 b3b3b3 b3b3b3 b3b3b3 b2b2b2 b2b2b2 b2b2b2 b2b2b2 
+    b1b1b1 b1b1b1 b1b1b1 b1b1b1 b0b0b0 b0b0b0 b0b0b0 b0b0b0 afafaf afafaf 
+    afafaf afafaf aeaeae aeaeae aeaeae aeaeae adadad adadad adadad adadad 
+    acacac acacac acacac acacac ababab ababab ababab ababab aaaaaa aaaaaa 
+    aaaaaa aaaaaa a9a9a9 a9a9a9 a9a9a9 a9a9a9 a8a8a8 a8a8a8 a8a8a8 a8a8a8 
+    a7a7a7 a7a7a7 a7a7a7 a7a7a7 a6a6a6 a6a6a6 a6a6a6 a6a6a6 a5a5a5 a5a5a5 
+    a5a5a5 a5a5a5 a4a4a4 a4a4a4 a4a4a4 a4a4a4 a3a3a3 a3a3a3 a3a3a3 a3a3a3 
+    a2a2a2 a2a2a2 a2a2a2 a2a2a2 a1a1a1 a1a1a1 a1a1a1 a1a1a1 a0a0a0 a0a0a0 
+    a0a0a0 a0a0a0 9f9f9f 9f9f9f 9f9f9f 9f9f9f 9e9e9e 9e9e9e 9e9e9e 9e9e9e 
+    9d9d9d 9d9d9d 9d9d9d 9d9d9d 9c9c9c 9c9c9c 9c9c9c 9c9c9c 9b9b9b 9b9b9b 
+    9b9b9b 9b9b9b 9a9a9a 9a9a9a 9a9a9a 9a9a9a 999999 999999 999999 999999 
+    989898 989898 989898 989898 979797 979797 979797 979797 969696 969696 
+    969696 969696 959595 959595 959595 959595 949494 949494 949494 949494 
+    939393 939393 939393 939393 929292 929292 929292 929292 919191 919191 
+    919191 919191 909090 909090 909090 909090 8f8f8f 8f8f8f 8f8f8f 8f8f8f 
+    8e8e8e 8e8e8e 8e8e8e 8e8e8e 8d8d8d 8d8d8d 8d8d8d 8d8d8d 8c8c8c 8c8c8c 
+    8c8c8c 8c8c8c 8b8b8b 8b8b8b 8b8b8b 8b8b8b 8a8a8a 8a8a8a 8a8a8a 8a8a8a 
+    898989 898989 898989 898989 888888 888888 888888 888888 878787 878787 
+    878787 878787 868686 868686 868686 868686 858585 858585 858585 858585 
+    848484 848484 848484 848484 838383 838383 838383 838383 828282 828282 
+    828282 828282 818181 818181 818181 818181 808080 808080 808080 808080 
+    7f7f7f 7f7f7f 7f7f7f 7f7f7f 7f7f7f 7e7e7e 7e7e7e 7e7e7e 7e7e7e 7d7d7d 
+    7d7d7d 7d7d7d 7d7d7d 7c7c7c 7c7c7c 7c7c7c 7c7c7c 7b7b7b 7b7b7b 7b7b7b 
+    7b7b7b 7a7a7a 7a7a7a 7a7a7a 7a7a7a 797979 797979 797979 797979 787878 
+    787878 787878 787878 777777 777777 777777 777777 767676 767676 767676 
+    767676 757575 757575 757575 757575 747474 747474 747474 747474 737373 
+    737373 737373 737373 727272 727272 727272 727272 717171 717171 717171 
+    717171 707070 707070 707070 707070 6f6f6f 6f6f6f 6f6f6f 6f6f6f 6e6e6e 
+    6e6e6e 6e6e6e 6e6e6e 6d6d6d 6d6d6d 6d6d6d 6d6d6d 6c6c6c 6c6c6c 6c6c6c 
+    6c6c6c 6b6b6b 6b6b6b 6b6b6b 6b6b6b 6a6a6a 6a6a6a 6a6a6a 6a6a6a 696969 
+    696969 696969 696969 686868 686868 686868 686868 676767 676767 676767 
+    676767 666666 666666 666666 666666 656565 656565 656565 656565 646464 
+    646464 646464 646464 636363 636363 636363 636363 626262 626262 626262 
+    626262 616161 616161 616161 616161 606060 606060 606060 606060 5f5f5f 
+    5f5f5f 5f5f5f 5f5f5f 5e5e5e 5e5e5e 5e5e5e 5e5e5e 5d5d5d 5d5d5d 5d5d5d 
+    5d5d5d 5c5c5c 5c5c5c 5c5c5c 5c5c5c 5b5b5b 5b5b5b 5b5b5b 5b5b5b 5a5a5a 
+    5a5a5a 5a5a5a 5a5a5a 595959 595959 595959 595959 585858 585858 585858 
+    585858 575757 575757 575757 575757 565656 565656 565656 565656 555555 
+    555555 555555 555555 545454 545454 545454 545454 535353 535353 535353 
+    535353 525252 525252 525252 525252 515151 515151 515151 515151 505050 
+    505050 505050 505050 4f4f4f 4f4f4f 4f4f4f 4f4f4f 4e4e4e 4e4e4e 4e4e4e 
+    4e4e4e 4d4d4d 4d4d4d 4d4d4d 4d4d4d 4c4c4c 4c4c4c 4c4c4c 4c4c4c 4b4b4b 
+    4b4b4b 4b4b4b 4b4b4b 4a4a4a 4a4a4a 4a4a4a 4a4a4a 494949 494949 494949 
+    494949 484848 484848 484848 484848 474747 474747 474747 474747 464646 
+    464646 464646 464646 454545 454545 454545 454545 444444 444444 444444 
+    444444 434343 434343 434343 434343 424242 424242 424242 424242 414141 
+    414141 414141 414141 404040 404040 404040 404040 3f3f3f 3f3f3f 3f3f3f 
+    3f3f3f 3f3f3f 3e3e3e 3e3e3e 3e3e3e 3e3e3e 3d3d3d 3d3d3d 3d3d3d 3d3d3d 
+    3c3c3c 3c3c3c 3c3c3c 3c3c3c 3b3b3b 3b3b3b 3b3b3b 3b3b3b 3a3a3a 3a3a3a 
+    3a3a3a 3a3a3a 393939 393939 393939 393939 383838 383838 383838 383838 
+    373737 373737 373737 373737 363636 363636 363636 363636 353535 353535 
+    353535 353535 343434 343434 343434 343434 333333 333333 333333 333333 
+    323232 323232 323232 323232 313131 313131 313131 313131 303030 303030 
+    303030 303030 2f2f2f 2f2f2f 2f2f2f 2f2f2f 2e2e2e 2e2e2e 2e2e2e 2e2e2e 
+    2d2d2d 2d2d2d 2d2d2d 2d2d2d 2c2c2c 2c2c2c 2c2c2c 2c2c2c 2b2b2b 2b2b2b 
+    2b2b2b 2b2b2b 2a2a2a 2a2a2a 2a2a2a 2a2a2a 292929 292929 292929 292929 
+    282828 282828 282828 282828 272727 272727 272727 272727 262626 262626 
+    262626 262626 252525 252525 252525 252525 242424 242424 242424 242424 
+    232323 232323 232323 232323 222222 222222 222222 222222 212121 212121 
+    212121 212121 202020 202020 202020 202020 1f1f1f 1f1f1f 1f1f1f 1f1f1f 
+    1e1e1e 1e1e1e 1e1e1e 1e1e1e 1d1d1d 1d1d1d 1d1d1d 1d1d1d 1c1c1c 1c1c1c 
+    1c1c1c 1c1c1c 1b1b1b 1b1b1b 1b1b1b 1b1b1b 1a1a1a 1a1a1a 1a1a1a 1a1a1a 
+    191919 191919 191919 191919 181818 181818 181818 181818 171717 171717 
+    171717 171717 161616 161616 161616 161616 151515 151515 151515 151515 
+    141414 141414 141414 141414 131313 131313 131313 131313 121212 121212 
+    121212 121212 111111 111111 111111 111111 101010 101010 101010 101010 
+    0f0f0f 0f0f0f 0f0f0f 0f0f0f 0e0e0e 0e0e0e 0e0e0e 0e0e0e 0d0d0d 0d0d0d 
+    0d0d0d 0d0d0d 0c0c0c 0c0c0c 0c0c0c 0c0c0c 0b0b0b 0b0b0b 0b0b0b 0b0b0b 
+    0a0a0a 0a0a0a 0a0a0a 0a0a0a 090909 090909 090909 090909 080808 080808 
+    080808 080808 070707 070707 070707 070707 060606 060606 060606 060606 
+    050505 050505 050505 050505 040404 040404 040404 040404 030303 030303 
+    030303 030303 020202 020202 020202 020202 010101 010101 010101 010101 
+    000000 000000 000000 000000 
+  >
+] setcolorspace } bdef mwscm
+gs np 767 332 mt 0 3605 rl 3951 0 rl 0 -3605 rl cp c np
+[3951 0 0 3605 767 332] cc
+<< % Image dictionary
+  /ImageType 1
+  /Width 77 /Height 77
+  /BitsPerComponent 12
+  /Decode [0 4095]
+  /ImageMatrix [77.000000 0 0 77.000000 0 0]
+  /DataSource currentfile
+  /ASCII85Decode filter
+  /RunLengthDecode filter
+>>
+image
+JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH4C(!]0uup](=?
+_#+08!Y584'!hQ="2Om9$Tcah3E):F""?&_1]7:V!rN$"YP/"u!Z)lb!"h;C!'HnS!!Cb1huGa`!&ESB
+r;Zs%oDerlpAb3pkjJKP%RA&7"9\2p"3C<=!<\hj!!P58f`2*VoDesoqB+)V!!*X=^&S6;_De^t!!k;h
+<\][9!!<W.!!4V?Z2FY'!TiqR"p'M[!>uF[r;Zj+nGN=i#4MTr+OgAq5GS0@e'^>U!!kRe=>:IL1:#^4
+!!+ThkPtVri5,Hs4sSE9Yl"J1"%Y-(!!!)=!!;Ke!iP\k!??Wu!!YXipcn6J51BQ5!@I16!$..$!<R4k
+!1X#k(B=G-JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$JH16$
+JH16$JH16$L]Dr
+~>
+gr
+gr
+
+0 sg
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 750 3980 mt 
+( ) s
+4702  374 mt 
+( ) s
+1 sg
+0 3607 240 0 0 -3607 4898 3938 4 MP
+PP
+-240 0 0 3607 240 0 0 -3607 4898 3938 5 MP stroke
+gs 4898 332 241 3607 rc
+/mwscm { [/Indexed /DeviceRGB 1023
+  <
+    ffffff fefefe fefefe fefefe fefefe fdfdfd fdfdfd fdfdfd fdfdfd fcfcfc 
+    fcfcfc fcfcfc fcfcfc fbfbfb fbfbfb fbfbfb fbfbfb fafafa fafafa fafafa 
+    fafafa f9f9f9 f9f9f9 f9f9f9 f9f9f9 f8f8f8 f8f8f8 f8f8f8 f8f8f8 f7f7f7 
+    f7f7f7 f7f7f7 f7f7f7 f6f6f6 f6f6f6 f6f6f6 f6f6f6 f5f5f5 f5f5f5 f5f5f5 
+    f5f5f5 f4f4f4 f4f4f4 f4f4f4 f4f4f4 f3f3f3 f3f3f3 f3f3f3 f3f3f3 f2f2f2 
+    f2f2f2 f2f2f2 f2f2f2 f1f1f1 f1f1f1 f1f1f1 f1f1f1 f0f0f0 f0f0f0 f0f0f0 
+    f0f0f0 efefef efefef efefef efefef eeeeee eeeeee eeeeee eeeeee ededed 
+    ededed ededed ededed ececec ececec ececec ececec ebebeb ebebeb ebebeb 
+    ebebeb eaeaea eaeaea eaeaea eaeaea e9e9e9 e9e9e9 e9e9e9 e9e9e9 e8e8e8 
+    e8e8e8 e8e8e8 e8e8e8 e7e7e7 e7e7e7 e7e7e7 e7e7e7 e6e6e6 e6e6e6 e6e6e6 
+    e6e6e6 e5e5e5 e5e5e5 e5e5e5 e5e5e5 e4e4e4 e4e4e4 e4e4e4 e4e4e4 e3e3e3 
+    e3e3e3 e3e3e3 e3e3e3 e2e2e2 e2e2e2 e2e2e2 e2e2e2 e1e1e1 e1e1e1 e1e1e1 
+    e1e1e1 e0e0e0 e0e0e0 e0e0e0 e0e0e0 dfdfdf dfdfdf dfdfdf dfdfdf dedede 
+    dedede dedede dedede dddddd dddddd dddddd dddddd dcdcdc dcdcdc dcdcdc 
+    dcdcdc dbdbdb dbdbdb dbdbdb dbdbdb dadada dadada dadada dadada d9d9d9 
+    d9d9d9 d9d9d9 d9d9d9 d8d8d8 d8d8d8 d8d8d8 d8d8d8 d7d7d7 d7d7d7 d7d7d7 
+    d7d7d7 d6d6d6 d6d6d6 d6d6d6 d6d6d6 d5d5d5 d5d5d5 d5d5d5 d5d5d5 d4d4d4 
+    d4d4d4 d4d4d4 d4d4d4 d3d3d3 d3d3d3 d3d3d3 d3d3d3 d2d2d2 d2d2d2 d2d2d2 
+    d2d2d2 d1d1d1 d1d1d1 d1d1d1 d1d1d1 d0d0d0 d0d0d0 d0d0d0 d0d0d0 cfcfcf 
+    cfcfcf cfcfcf cfcfcf cecece cecece cecece cecece cdcdcd cdcdcd cdcdcd 
+    cdcdcd cccccc cccccc cccccc cccccc cbcbcb cbcbcb cbcbcb cbcbcb cacaca 
+    cacaca cacaca cacaca c9c9c9 c9c9c9 c9c9c9 c9c9c9 c8c8c8 c8c8c8 c8c8c8 
+    c8c8c8 c7c7c7 c7c7c7 c7c7c7 c7c7c7 c6c6c6 c6c6c6 c6c6c6 c6c6c6 c5c5c5 
+    c5c5c5 c5c5c5 c5c5c5 c4c4c4 c4c4c4 c4c4c4 c4c4c4 c3c3c3 c3c3c3 c3c3c3 
+    c3c3c3 c2c2c2 c2c2c2 c2c2c2 c2c2c2 c1c1c1 c1c1c1 c1c1c1 c1c1c1 c0c0c0 
+    c0c0c0 c0c0c0 c0c0c0 bfbfbf bfbfbf bfbfbf bfbfbf bfbfbf bebebe bebebe 
+    bebebe bebebe bdbdbd bdbdbd bdbdbd bdbdbd bcbcbc bcbcbc bcbcbc bcbcbc 
+    bbbbbb bbbbbb bbbbbb bbbbbb bababa bababa bababa bababa b9b9b9 b9b9b9 
+    b9b9b9 b9b9b9 b8b8b8 b8b8b8 b8b8b8 b8b8b8 b7b7b7 b7b7b7 b7b7b7 b7b7b7 
+    b6b6b6 b6b6b6 b6b6b6 b6b6b6 b5b5b5 b5b5b5 b5b5b5 b5b5b5 b4b4b4 b4b4b4 
+    b4b4b4 b4b4b4 b3b3b3 b3b3b3 b3b3b3 b3b3b3 b2b2b2 b2b2b2 b2b2b2 b2b2b2 
+    b1b1b1 b1b1b1 b1b1b1 b1b1b1 b0b0b0 b0b0b0 b0b0b0 b0b0b0 afafaf afafaf 
+    afafaf afafaf aeaeae aeaeae aeaeae aeaeae adadad adadad adadad adadad 
+    acacac acacac acacac acacac ababab ababab ababab ababab aaaaaa aaaaaa 
+    aaaaaa aaaaaa a9a9a9 a9a9a9 a9a9a9 a9a9a9 a8a8a8 a8a8a8 a8a8a8 a8a8a8 
+    a7a7a7 a7a7a7 a7a7a7 a7a7a7 a6a6a6 a6a6a6 a6a6a6 a6a6a6 a5a5a5 a5a5a5 
+    a5a5a5 a5a5a5 a4a4a4 a4a4a4 a4a4a4 a4a4a4 a3a3a3 a3a3a3 a3a3a3 a3a3a3 
+    a2a2a2 a2a2a2 a2a2a2 a2a2a2 a1a1a1 a1a1a1 a1a1a1 a1a1a1 a0a0a0 a0a0a0 
+    a0a0a0 a0a0a0 9f9f9f 9f9f9f 9f9f9f 9f9f9f 9e9e9e 9e9e9e 9e9e9e 9e9e9e 
+    9d9d9d 9d9d9d 9d9d9d 9d9d9d 9c9c9c 9c9c9c 9c9c9c 9c9c9c 9b9b9b 9b9b9b 
+    9b9b9b 9b9b9b 9a9a9a 9a9a9a 9a9a9a 9a9a9a 999999 999999 999999 999999 
+    989898 989898 989898 989898 979797 979797 979797 979797 969696 969696 
+    969696 969696 959595 959595 959595 959595 949494 949494 949494 949494 
+    939393 939393 939393 939393 929292 929292 929292 929292 919191 919191 
+    919191 919191 909090 909090 909090 909090 8f8f8f 8f8f8f 8f8f8f 8f8f8f 
+    8e8e8e 8e8e8e 8e8e8e 8e8e8e 8d8d8d 8d8d8d 8d8d8d 8d8d8d 8c8c8c 8c8c8c 
+    8c8c8c 8c8c8c 8b8b8b 8b8b8b 8b8b8b 8b8b8b 8a8a8a 8a8a8a 8a8a8a 8a8a8a 
+    898989 898989 898989 898989 888888 888888 888888 888888 878787 878787 
+    878787 878787 868686 868686 868686 868686 858585 858585 858585 858585 
+    848484 848484 848484 848484 838383 838383 838383 838383 828282 828282 
+    828282 828282 818181 818181 818181 818181 808080 808080 808080 808080 
+    7f7f7f 7f7f7f 7f7f7f 7f7f7f 7f7f7f 7e7e7e 7e7e7e 7e7e7e 7e7e7e 7d7d7d 
+    7d7d7d 7d7d7d 7d7d7d 7c7c7c 7c7c7c 7c7c7c 7c7c7c 7b7b7b 7b7b7b 7b7b7b 
+    7b7b7b 7a7a7a 7a7a7a 7a7a7a 7a7a7a 797979 797979 797979 797979 787878 
+    787878 787878 787878 777777 777777 777777 777777 767676 767676 767676 
+    767676 757575 757575 757575 757575 747474 747474 747474 747474 737373 
+    737373 737373 737373 727272 727272 727272 727272 717171 717171 717171 
+    717171 707070 707070 707070 707070 6f6f6f 6f6f6f 6f6f6f 6f6f6f 6e6e6e 
+    6e6e6e 6e6e6e 6e6e6e 6d6d6d 6d6d6d 6d6d6d 6d6d6d 6c6c6c 6c6c6c 6c6c6c 
+    6c6c6c 6b6b6b 6b6b6b 6b6b6b 6b6b6b 6a6a6a 6a6a6a 6a6a6a 6a6a6a 696969 
+    696969 696969 696969 686868 686868 686868 686868 676767 676767 676767 
+    676767 666666 666666 666666 666666 656565 656565 656565 656565 646464 
+    646464 646464 646464 636363 636363 636363 636363 626262 626262 626262 
+    626262 616161 616161 616161 616161 606060 606060 606060 606060 5f5f5f 
+    5f5f5f 5f5f5f 5f5f5f 5e5e5e 5e5e5e 5e5e5e 5e5e5e 5d5d5d 5d5d5d 5d5d5d 
+    5d5d5d 5c5c5c 5c5c5c 5c5c5c 5c5c5c 5b5b5b 5b5b5b 5b5b5b 5b5b5b 5a5a5a 
+    5a5a5a 5a5a5a 5a5a5a 595959 595959 595959 595959 585858 585858 585858 
+    585858 575757 575757 575757 575757 565656 565656 565656 565656 555555 
+    555555 555555 555555 545454 545454 545454 545454 535353 535353 535353 
+    535353 525252 525252 525252 525252 515151 515151 515151 515151 505050 
+    505050 505050 505050 4f4f4f 4f4f4f 4f4f4f 4f4f4f 4e4e4e 4e4e4e 4e4e4e 
+    4e4e4e 4d4d4d 4d4d4d 4d4d4d 4d4d4d 4c4c4c 4c4c4c 4c4c4c 4c4c4c 4b4b4b 
+    4b4b4b 4b4b4b 4b4b4b 4a4a4a 4a4a4a 4a4a4a 4a4a4a 494949 494949 494949 
+    494949 484848 484848 484848 484848 474747 474747 474747 474747 464646 
+    464646 464646 464646 454545 454545 454545 454545 444444 444444 444444 
+    444444 434343 434343 434343 434343 424242 424242 424242 424242 414141 
+    414141 414141 414141 404040 404040 404040 404040 3f3f3f 3f3f3f 3f3f3f 
+    3f3f3f 3f3f3f 3e3e3e 3e3e3e 3e3e3e 3e3e3e 3d3d3d 3d3d3d 3d3d3d 3d3d3d 
+    3c3c3c 3c3c3c 3c3c3c 3c3c3c 3b3b3b 3b3b3b 3b3b3b 3b3b3b 3a3a3a 3a3a3a 
+    3a3a3a 3a3a3a 393939 393939 393939 393939 383838 383838 383838 383838 
+    373737 373737 373737 373737 363636 363636 363636 363636 353535 353535 
+    353535 353535 343434 343434 343434 343434 333333 333333 333333 333333 
+    323232 323232 323232 323232 313131 313131 313131 313131 303030 303030 
+    303030 303030 2f2f2f 2f2f2f 2f2f2f 2f2f2f 2e2e2e 2e2e2e 2e2e2e 2e2e2e 
+    2d2d2d 2d2d2d 2d2d2d 2d2d2d 2c2c2c 2c2c2c 2c2c2c 2c2c2c 2b2b2b 2b2b2b 
+    2b2b2b 2b2b2b 2a2a2a 2a2a2a 2a2a2a 2a2a2a 292929 292929 292929 292929 
+    282828 282828 282828 282828 272727 272727 272727 272727 262626 262626 
+    262626 262626 252525 252525 252525 252525 242424 242424 242424 242424 
+    232323 232323 232323 232323 222222 222222 222222 222222 212121 212121 
+    212121 212121 202020 202020 202020 202020 1f1f1f 1f1f1f 1f1f1f 1f1f1f 
+    1e1e1e 1e1e1e 1e1e1e 1e1e1e 1d1d1d 1d1d1d 1d1d1d 1d1d1d 1c1c1c 1c1c1c 
+    1c1c1c 1c1c1c 1b1b1b 1b1b1b 1b1b1b 1b1b1b 1a1a1a 1a1a1a 1a1a1a 1a1a1a 
+    191919 191919 191919 191919 181818 181818 181818 181818 171717 171717 
+    171717 171717 161616 161616 161616 161616 151515 151515 151515 151515 
+    141414 141414 141414 141414 131313 131313 131313 131313 121212 121212 
+    121212 121212 111111 111111 111111 111111 101010 101010 101010 101010 
+    0f0f0f 0f0f0f 0f0f0f 0f0f0f 0e0e0e 0e0e0e 0e0e0e 0e0e0e 0d0d0d 0d0d0d 
+    0d0d0d 0d0d0d 0c0c0c 0c0c0c 0c0c0c 0c0c0c 0b0b0b 0b0b0b 0b0b0b 0b0b0b 
+    0a0a0a 0a0a0a 0a0a0a 0a0a0a 090909 090909 090909 090909 080808 080808 
+    080808 080808 070707 070707 070707 070707 060606 060606 060606 060606 
+    050505 050505 050505 050505 040404 040404 040404 040404 030303 030303 
+    030303 030303 020202 020202 020202 020202 010101 010101 010101 010101 
+    000000 000000 000000 000000 
+  >
+] setcolorspace } bdef mwscm
+gs np 4898 332 mt 0 3606 rl 240 0 rl 0 -3606 rl cp c np
+[240 0 0 3606 4898 332] cc
+<< % Image dictionary
+  /ImageType 1
+  /Width 1 /Height 1024
+  /BitsPerComponent 12
+  /Decode [0 4095]
+  /ImageMatrix [1.000000 0 0 1024.000000 0 0]
+  /DataSource currentfile
+  /ASCII85Decode filter
+  /RunLengthDecode filter
+>>
+image
+Im<Eei'5RQ^d#%fTKeN&J3S!;?p@IP5X-qe+?pE%!']m9i',LO^cntdTK\H$J3Ip9?p7CN5X$kc+?g?#
+!'Tg7i'#FM^cenbTKSB"J3@j7?p.=L5Wpea+?^9!!'Ka5i&o@K^c\h`TKJ;uJ37d5?p%7J5Wg__+?U2t
+!.R*"45`3I42<q^4.nZs4+KD34((-H4$Yk]4!6Tr3rh>23oE'G3l!e\3hSNq3e0813ab!F3^>_[3ZpHp
+3WM203T)pE3P[YZ3M8Bo3Ij,/3FFjD3C#SY3?U<n3<2&.38cdC35@MX31r6m3.Nu-3++^B3']GW3$:0l
+2unFen2K8aco8a!YW&46O>h\KE&V/`:cCWu0K1+5&2sSIn2B2_co/ZtYVr.4O>_VIE&M)^:c:Qs0K(%3
+&2jMGn29,]co&TrYVi(2O>VPGE&D#\:c1Kq0Jst1&2aGEn20&[cnrNpYV`"0O>MJEE&:rZ:c(Eo0Jjn/
+&2XB21[m3Y1XIqn1U&[.1QXDC1N5-X1Jfkm1GCU-1Cu>B1@R'W1=.el19`O,16=8A12o!V1/K_k1,(I+
+1(Z2@1%6pU1!hYj0sEC*0p",?0lSjT0i0Si0eb=)0b?&>0^pdS0[MMh0X*7(0T[u=0Q8^R0MjGgr\/gE
+0G#o<0CUXQ0@2Af0<d+&09@i;05rRP02O;e0/,%%0+]c:0(:LO0$l5d0!Ht$/s%]9/oWFN/l4/c/hen#
+/eBW8/at@M/^Q)b/[-h"/W_Q7/T<:L/Pn#a/MJb!/J'K6/FY4K/C5r`/?g[u/<DE5/9!.J/5Rl_/2/W)
++=n'T!%[Ohi%*/)^alW>TIZ*SJ1GRh?n5&(5V"N=+=e!R!%RIfi%!)'^acQ<TIQ$QJ1>Lf?n+u&5UnH;
++=[pP!%ICdi$m#%^aZK:TIGsOJ15Fd?n"o$5UeB9+=RjN!%@=bi$cr#^aQE8TI>mMJ1,@b?mni"5U\<7
+Iip-N-ibXa-f?B!-bq+6-_MiK-\*R`-X\;u-U9%5-QjcJ-NGL_-K$5t-GUt4-D2]I-@dF^-=A/s-9rn3
+-6OWH-3,@]-/^)r-,:h2-(lQG-%I:\-"&#q,sWb1,p4KF,lf4[,iBrp,et\0,bQEE,_..Z,[_lo,X<V/
+,_$p^&0q6#n0?j9cm-=NYToecO<]9#E$Ja8:a84M0I%\b&0h0!n06d7cm$7LYTf_aO<T3!E$A[6:a/.K
+0HqV`&0_)tn0-^5clp1JYT]Y_O<K,tE$8U4:a&(I0HhP^&0V#rn0$X3clg+HYTTS]O<B&rE$/O2:`r"G
+0Hbif+:oXq+7LB1+4)+F+0Zi[+-7Rp+)i<0+&F%E+#"cZ*tTLo*q16/*mbtD*j?]Y*fqFn*cN0.*`*nC
+*\\WX*Y9@m*Uk*-*RGhB*O$QW*KV:l*H3$,*DdbA*AAKV*=s4k*:Os+*7,\@*3^EU*0;.j*,lm**)IV?
+*&&@^+<1q4!#tDHi#C#^^`0KsTGrt3J/`GH?lMo]5T;Br+<(k2!#k>Fi#9r\^`'EqTGin1J/WAF?lDi[
+5T2<p+;te0!#b8Di#0lZ^_s?oTG`h/J/N;D?l;cY5T)6n+;k_.!#Y2Bi#'fX^_j9mTGWb-J/E5B?l2]W
+5Su0lIioR>(]YBA(Z6+V(Vgik(SDS+(P!<@(LS%U(I/cj(EaM*(B>6?(>otT(;L]i(8)G)(4[0>(17nS
+(-iWh(*FA(('#*=(#ThR'u1Qg'qc;''n@$<'jqbQ'gNKf'd+5&'`\s;']9\P'YkEe'VH/%'S$m:'OVVO
+'L3?d'Rq5>&/5*Xn.X^nckF2.YS3ZCO;!-XE"cUm:_Q)-0G>QB&/,$Vn.OXlck=,,YS*TAO:m'VE"ZOk
+:_H#+0G5K@&/"sTn.FRjck4&*YS!N?O:d!TE"QIi:_>r)0G,E>&.nmRn.=Lhck*u(YRmH=O:ZpRE"HCg
+:_5l'0G"4,rXaPZ&+C+f&'tj&&$QS;&!.<P%r`%e%o<d%%knM:%hK6O%e'td%aY^$%^6G9%Zh0N%WDnc
+%T!X#%PSA8%M0*M%Iahb%F>R"%Bp;7%?M$L%<)ba%8[L!%5856%1isK%.F\`%+#Eu%'U/5%$1mJ$ucV_
+$r@?t$nr)4$kNhs!"89(i![m>^^I@STF6hhJ.$<(?jfd=5RT7R+:A_g!"/3&i!Rg<^^@:QTF-bfJ-p6&
+?j]^;5RK1P+:8Ye!"&-$i!Ia:^^74OTF$\dJ-g0$?jTX95RB+N+:/Sc!!r'"i!@[8^^..MTEpVbJ-^*"
+?jKR75R9%L+:&MaIfK`C#N,j6#J^SK#G;<`#Cm%u#@Id5#=&MJ#9X6_#64tt#2f^4#/CGI#+u0^#(Qns
+#%.X3#!`AH"s=*]"onhr"lKR2"i(;G"eZ$\"b6bq"^hL1"[E5F"X!s["TS\p"Q0F0"Mb/E"J>mZ"FpVo
+"CM@/"@*)D"<[gY"FgCRn,qSNci_&cYQLO#O9:"8E!'JM:]irb0EWF"&-Dn6n,hMLciUuaYQCI!O90q6
+DusDK:]`l`0EN?u&-;h4n,_GJciLo_YQ:BtO9'k4Duj>I:]Wf^0EE9s&-2b2n,VAHciCi]YQ1<rO8se2
+Dua8G:]N`\0E<3q&-)\1J,
+~>
+gr
+gr
+
+4 w
+DO
+SO
+6 w
+0 sg
+4898 3938 mt 5138 3938 L
+4898  331 mt 5138  331 L
+4898 3938 mt 4898  331 L
+5138 3938 mt 5138  331 L
+4898 3938 mt 5138 3938 L
+5138 3938 mt 5138  331 L
+5138 3938 mt 5101 3938 L
+4898 3938 mt 4934 3938 L
+5172 3982 mt 
+(0) s
+5138 3470 mt 5101 3470 L
+4898 3470 mt 4934 3470 L
+5172 3514 mt 
+(50) s
+5138 3003 mt 5101 3003 L
+4898 3003 mt 4934 3003 L
+5172 3047 mt 
+(100) s
+5138 2536 mt 5101 2536 L
+4898 2536 mt 4934 2536 L
+5172 2580 mt 
+(150) s
+5138 2069 mt 5101 2069 L
+4898 2069 mt 4934 2069 L
+5172 2113 mt 
+(200) s
+5138 1602 mt 5101 1602 L
+4898 1602 mt 4934 1602 L
+5172 1646 mt 
+(250) s
+5138 1135 mt 5101 1135 L
+4898 1135 mt 4934 1135 L
+5172 1179 mt 
+(300) s
+5138  668 mt 5101  668 L
+4898  668 mt 4934  668 L
+5172  712 mt 
+(350) s
+4898 3938 mt 5138 3938 L
+4898  331 mt 5138  331 L
+4898 3938 mt 4898  331 L
+5138 3938 mt 5138  331 L
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF
